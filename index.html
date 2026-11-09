@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aether Pixels Docs</title>
+<meta name="description" content="Documentation for Unreal Engine plugins by Ahmed Farrag.">
+<style>
+  :root {
+    --bg: #0b0f17;
+    --card: #121826;
+    --card-hover: #172033;
+    --line: #232c3d;
+    --ink: #e8ecf3;
+    --ink-dim: #8b95a7;
+    --accent: #4f8cff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --card-hover: #f0f4fb;
+      --line: #dde3ee;
+      --ink: #141a26;
+      --ink-dim: #5b6576;
+      --accent: #2f6fe4;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 64px 16px 48px; }
+  header h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--ink-dim); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-dim); margin: 48px 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .card {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 20px; border: 1px solid var(--line); border-radius: 12px;
+    background: var(--card); color: inherit; text-decoration: none;
+    transition: background .15s, border-color .15s;
+  }
+  .card:hover { background: var(--card-hover); border-color: var(--accent); }
+  .card img { width: 64px; height: 64px; border-radius: 12px; flex: none; }
+  .card h3 { margin: 0 0 4px; font-size: 18px; line-height: 1.3; }
+  .card p { margin: 0 0 12px; color: var(--ink-dim); font-size: 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 28px; padding: 0 12px; border-radius: 14px;
+    border: 1px solid var(--line); font-size: 13px; line-height: 1; color: var(--ink);
+    text-decoration: none;
+  }
+  .pill:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--ink-dim); font-size: 14px; }
+  footer a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Aether Pixels Docs</h1>
+    <p>Documentation and support for Unreal Engine plugins by Ahmed Farrag.</p>
+  </header>
+
+  <h2>Plugins</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="/slatecharts/images/icon.png" alt="">
+      <div>
+        <h3>SlateCharts</h3>
+        <p>About 30 native Slate and UMG chart widgets. No browser, no JavaScript.</p>
+        <div class="links">
+          <a class="pill" href="/slatecharts/">Docs</a>
+          <a class="pill" href="/slatecharts/getting-started">Get started</a>
+          <a class="pill" href="/slatecharts/lite">Free Lite version</a>
+          <a class="pill" href="/slatecharts/support">Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://aetherpixels.com">aetherpixels.com</a> · <a href="https://ahmedfarrag.me">ahmedfarrag.me</a> · <a href="https://github.com/ahmad-farrag">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

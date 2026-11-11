@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Aether Pixels Docs</title>
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<script>
+  // Old or mistyped addresses (capitals, a trailing slash) go to the page they meant.
+  (function () {
+    var p = location.pathname;
+    var n = p.toLowerCase();
+    if (n.split("/").filter(Boolean).length > 1) { n = n.replace(/\/+$/, ""); }
+    if (n !== p) { location.replace(n + location.search + location.hash); }
+  })();
+</script>
+<style>
+  :root { --bg: #0b0f17; --ink: #e8ecf3; --dim: #8b95a7; --accent: #9cc0ff; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f5f7fb; --ink: #141a26; --dim: #5b6576; --accent: #2f6fe4; } }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg); color: var(--ink);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 0 16px; text-align: center; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  p { color: var(--dim); margin: 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p>Try the <a href="/">docs home</a> or the <a href="/slatecharts/">SlateCharts documentation</a>.</p>
+</main>
+</body>
+</html>
